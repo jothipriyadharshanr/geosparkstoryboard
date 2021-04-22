@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB85E083A8F44F99A06A4123 /* Pods_geosparkexample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57C3878B6E84EFB3DA66EE27 /* Pods_geosparkexample.framework */; };
 		D99201FE26312F930069DBDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99201FD26312F930069DBDB /* AppDelegate.swift */; };
 		D992020026312F930069DBDB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99201FF26312F930069DBDB /* SceneDelegate.swift */; };
 		D992020226312F930069DBDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D992020126312F930069DBDB /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C496387141CE900764EBD55 /* Pods-geosparkexample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-geosparkexample.debug.xcconfig"; path = "Target Support Files/Pods-geosparkexample/Pods-geosparkexample.debug.xcconfig"; sourceTree = "<group>"; };
+		3352D63449948AC0F5EDF4BA /* Pods-geosparkexample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-geosparkexample.release.xcconfig"; path = "Target Support Files/Pods-geosparkexample/Pods-geosparkexample.release.xcconfig"; sourceTree = "<group>"; };
+		57C3878B6E84EFB3DA66EE27 /* Pods_geosparkexample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_geosparkexample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D99201FA26312F930069DBDB /* geosparkexample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = geosparkexample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D99201FD26312F930069DBDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D99201FF26312F930069DBDB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB85E083A8F44F99A06A4123 /* Pods_geosparkexample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F7E36B704579445D8F5EE75 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1C496387141CE900764EBD55 /* Pods-geosparkexample.debug.xcconfig */,
+				3352D63449948AC0F5EDF4BA /* Pods-geosparkexample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3D8C3492B97AE847B50B08F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				57C3878B6E84EFB3DA66EE27 /* Pods_geosparkexample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D99201F126312F930069DBDB = {
 			isa = PBXGroup;
 			children = (
 				D99201FC26312F930069DBDB /* geosparkexample */,
 				D99201FB26312F930069DBDB /* Products */,
+				2F7E36B704579445D8F5EE75 /* Pods */,
+				3D8C3492B97AE847B50B08F8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D992020E26312F970069DBDB /* Build configuration list for PBXNativeTarget "geosparkexample" */;
 			buildPhases = (
+				3D58F8ACEE3005AAB68F19BE /* [CP] Check Pods Manifest.lock */,
 				D99201F626312F930069DBDB /* Sources */,
 				D99201F726312F930069DBDB /* Frameworks */,
 				D99201F826312F930069DBDB /* Resources */,
+				1B807538374AA9ADD850B1B1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +157,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B807538374AA9ADD850B1B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-geosparkexample/Pods-geosparkexample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-geosparkexample/Pods-geosparkexample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-geosparkexample/Pods-geosparkexample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D58F8ACEE3005AAB68F19BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-geosparkexample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D99201F626312F930069DBDB /* Sources */ = {
@@ -216,7 +284,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +339,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -283,6 +351,7 @@
 		};
 		D992020F26312F970069DBDB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C496387141CE900764EBD55 /* Pods-geosparkexample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +371,7 @@
 		};
 		D992021026312F970069DBDB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3352D63449948AC0F5EDF4BA /* Pods-geosparkexample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
